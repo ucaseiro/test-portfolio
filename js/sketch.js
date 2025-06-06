@@ -32,6 +32,10 @@ $(document).ready(function () {
     });
   
     updateCarousel(); // Initial call
-
+    window.addEventListener('scroll', () => {
+        if (window.scrollX !== 0) {
+          window.scrollTo(0, window.scrollY);
+        }
+      });
   });
   
